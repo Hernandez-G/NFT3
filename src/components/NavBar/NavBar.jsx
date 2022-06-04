@@ -57,7 +57,7 @@ export default function NavBar({ user, setUser }) {
             Click Me!
           </button>
         </div>
-      <SearchBar />
+      <SearchBar search={search}/>
     </nav>
   );
 }

@@ -1,6 +1,7 @@
-export default function SearchBar() {
-    <div class="search-box">
-      <input type="text" placeholder="Search" />
-      <a href="##" class="icon"></a>
-    </div>;
+import React, { Fragment } from 'react'
+
+export default function SearchBar(data) {
+    <Fragment>
+        <dt> {data.search_results[1].name} </dt>
+    </Fragment>
 }
