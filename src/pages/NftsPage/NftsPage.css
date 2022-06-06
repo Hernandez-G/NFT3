@@ -1,6 +1,17 @@
 .nft-container{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 50vmin 50vmin 50vmin 50vmin;
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #eee;
     width: 500px;
     height: 500px;
     background-color: rgb(255, 255, 255);
     color: black;
+}
+
+.NftSearch{
+    display: grid;
+    width: 500px;
 }

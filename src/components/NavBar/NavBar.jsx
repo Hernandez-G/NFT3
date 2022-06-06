@@ -6,6 +6,7 @@ import * as userService from '../../utilities/users-service';
 
 export default function NavBar({ user, setUser }) {
 
+
   function handleLogOut() {
     // Remove token using the user service
     userService.logOut();

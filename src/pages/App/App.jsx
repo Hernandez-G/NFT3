@@ -6,8 +6,11 @@ import NewOrderPage from '../NewOrderPage/NewOrderPage';
 import UserProfile from '../UserProfile/UserProfile';
 import NavBar from '../../components/NavBar/NavBar';
 import SearchBar from '../../components/SearchBar/SearchBar';
-import './App.css';
 import NftPage from '../NftsPage/NftsPage';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NftDetailsPage from "../NftDetailsPage/NftDetailsPage"
+
 
 function App() {
   const [user, setUser] = useState(getUser());
@@ -46,6 +49,8 @@ function App() {
             {/* Route components in here */}
             <Route path="/orders/new" element={<NewOrderPage />} />
             <Route path="/userprofile" element={<UserProfile />} />
+            <Route path="/nftdetails/:id" element={<NftDetailsPage nfts={nfts} />} />
+
           </Routes>
           <div className="search">
           <input
@@ -55,7 +60,7 @@ function App() {
             value={search}
             onChange={handleChange}
           />
-          <button type="button" onClick={handleClick}>
+          <button type="button" onClick={handleClick} to="/search">
             Click Me!
           </button>
         </div>
