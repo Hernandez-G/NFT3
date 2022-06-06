@@ -1,8 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const usersCtrl = require('../../controllers/api/nfts');
+const nftsCtrl = require('../../controllers/api/nfts');
 
-
-router.get('/nfts/{contract_address}/{token_id}, nftsCtrl.display')
+// GET /api/items
+router.get('/', nftsCtrl.index);
+// GET /api/items/:id
+router.get('/contract_address/:id', nftsCtrl.show);
 
 module.exports = router;
