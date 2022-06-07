@@ -1,6 +1,5 @@
 import "./SearchBar.css";
 import { useState} from 'react';
-import { Link } from "react-router-dom";
 
 // import * as nftAPI from "../../utilities/NFTs-api"
 

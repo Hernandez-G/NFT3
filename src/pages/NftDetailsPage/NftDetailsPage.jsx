@@ -2,6 +2,9 @@
 import React from 'react';
 import "./NftDetailsPage.css";
 import { useParams } from "react-router-dom";
+// import { CgDetailsMore } from "react-icons/cg"
+import LikeButton from '../../components/LikeButton/LikeButton';
+
 
 
 function NftDetailsPage({nfts}) {
@@ -11,12 +14,24 @@ function NftDetailsPage({nfts}) {
     const nft = nfts.find((nft) => id === nft.token_id);
     console.log(nft);
 
+    // const [nftMetadata, setNftMetadata] = useState(" ");
+    // const handleChange = (evt) => {
+    //     setNftMetadata(evt.target.value)
+    //     console.log(nftMetadata);
+    // }
+    // const LikeButton = () => {
+    //     const [liked, setLiked] = useState(null)
+    // }
+
     return (
         <>
-        <h1>hi!</h1>
-        <p>{id}</p>    
-        <p>{nft.name}</p>    
-        {/* <h1>something goes hereeeeeee!</h1> */}
+        <h1>{nft.name}</h1>
+        <p>{id}
+        {nft.description} 
+        {nft.mint_date}  
+        </p> 
+        <hr />
+        <LikeButton />
         </>
 
     )

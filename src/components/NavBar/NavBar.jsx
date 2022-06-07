@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
-// import { useState } from 'react'
 import * as userService from '../../utilities/users-service';
 import SearchBar from '../SearchBar/SearchBar';
-// import SearchBar from "../SearchBar/SearchBar";
 
 
 export default function NavBar({ user, setUser, handleSearch }) {

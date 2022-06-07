@@ -13,9 +13,14 @@ export default function UserProfile() {
       <container className="detail-card">
       <h3>Usersname</h3>
         <p>Bio goes here</p>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <hr />
+    [nft likes]
+        <hr/>
 
 
-      <button onClick={handleCheckToken}>Check When My Login Expires</button>
+      {/* <button onClick={handleCheckToken}>Check When My Login Expires</button> */}
       </container>
     </>
   );
