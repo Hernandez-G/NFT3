@@ -14,21 +14,13 @@ export default function NftPage({nfts}) {
             <Card style={{ width: '18rem' }}>
                 <Card.Body className='main'>
                 {/* <CgDetailsMore /> */}
-                    <Card.Img src="{n.image}">{n.nft.metadata.image}</Card.Img>
-                    {/* <img src={n.metadata.owner} /> */}
+                    <Card.Img src="{n.image}">{n.image}</Card.Img>
                     <Card.Title className="nft-name">{n.name}</Card.Title>
-                    {/* <Card.Subtitle className="mb-2 text-muted">{n.description}</Card.Subtitle> */}
                     <Card.Text>{n.chain}</Card.Text> 
                     <Card.Text>{n.contract_address}</Card.Text>
-
-                    {/* <Card.Text>{n.hasOwnProperty}</Card.Text> */}
-                    {/* <Card.Text>{n.mint_date}</Card.Text> */}
-
                     <Link to={`/nftdetails/${n.token_id}`}> <CgDetailsMore /> </Link>
                     <Link to="/creatorprofile">Creator</Link>
                 </Card.Body>
-                {/* <CgDetailsMore /> */}
-
                 </Card>
         </div>
     )

@@ -5,8 +5,8 @@ import * as usersApi from "../../utilities/users-api"
 
 function ProfileForm({user}) {
     const [userUpdate, setUserUpdate] = useState({
-        username: user.username ? user.username : '',
-        bio: user.bio ? user.bio : ''
+        username: user && user.username ? user.username : '',
+        bio: user && user.bio ? user.bio : ''
     });
     const[submitting, setSubmitting] = useState(false);
      async function handleSubmit(evt) {
@@ -23,11 +23,10 @@ function ProfileForm({user}) {
     }
     
     function handleChange(evt) {
-        setUserUpdate({...userUpdate, [evt.target]: evt.target.value });
-        console.log(handleChange);
-
+        setUserUpdate({...userUpdate, [evt.target.name]: evt.target.value });
+        
     }
-
+console.log(userUpdate);
         
         return(
 
@@ -36,21 +35,21 @@ function ProfileForm({user}) {
                 {submitting &&
                 <div>Submitting Form...</div>
                 }
-                <form onSubmit={handleSubmit} handleChange={handleChange}>
+                <form onSubmit={handleSubmit} onChange={handleChange}>
                     <fieldset>
                         <label>
                             <p>Name</p>
                             <input 
                             type="text"
                             name="username"
-                            value={user.username}
+                            value= {userUpdate.username}
                              />
                             <br />
                             <p>Upload Photo</p>
                             <input type="file" name="newfile" />
                             <input type="submit" name="submit" />
                             <p>Bio</p>
-                            <textarea name="message" required/>
+                            <textarea name="bio" required/>
                             <p>Instagram</p>
                             <input name="name" />
                             <p>Twitter</p>

@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NftDetailsPage from "../NftDetailsPage/NftDetailsPage"
 import EditProfile from "../EditProfile/EditProfile"
 import * as nftAPI from "../../utilities/NFTs-api"
-
+import HomePage from '../HomePage/HomePage';
 
 function App() {
   const [user, setUser] = useState(getUser());
@@ -41,6 +41,7 @@ function App() {
           <NavBar user={user} setUser={setUser}  handleSearch={handleSearch} />
           <Routes>
             {/* Route components in here */}
+            <Route path="/" element={<HomePage />} />
             <Route path="/nftspage" element={<NftsPage nfts={nfts} />} />
             <Route path="/userprofile" element={<UserProfile user={user}/>} />
             <Route path="/nftdetails/:id" element={<NftDetailsPage nfts={nfts} />} />
@@ -51,7 +52,6 @@ function App() {
         </>
         :
         <AuthPage setUser={setUser} />
-        
       }
     </main>
   );

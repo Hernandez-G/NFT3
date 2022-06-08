@@ -10,7 +10,10 @@ module.exports = {
 };
 
 async function update(req, res){
-  const user = await User.findById(req.user._id, req.body, {new:true})
+  console.log(req.body);
+  const user = await User.findById(req.user._id)
+  user.username=req.body.username
+  user.bio=req.body.bio
   console.log(user);
 }
 
