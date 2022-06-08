@@ -5,8 +5,14 @@ const User = require('../../models/user');
 module.exports = {
   create,
   login,
-  checkToken
+  checkToken, 
+  update
 };
+
+async function update(req, res){
+  const user = await User.findById(req.user._id, req.body, {new:true})
+  console.log(user);
+}
 
 function checkToken(req, res) {
   console.log(req.user);

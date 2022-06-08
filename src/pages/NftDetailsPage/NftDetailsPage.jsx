@@ -20,7 +20,7 @@ function NftDetailsPage({nfts}) {
         <h1>{nft.name}</h1>
         <p>{id}
         {nft.description} 
-        {nft.mint_date}  
+        {nft.mint_date} 
         </p> 
         <hr />
         <Modal />

@@ -1,27 +1,28 @@
-import { checkToken } from "../../utilities/users-service";
 import "./UserProfile.css"
-// import UserCard from "../../components/UserCard/UserCard"
+// import ProfileForm from "../../components/ProfileForm/ProfileForm";
+import { Link } from "react-router-dom";
 
-export default function UserProfile() {
-  async function handleCheckToken() {
-    const expDate = await checkToken();
-    console.log(expDate);
-  }
+export default function UserProfile({user}) {
+
+
+  
   
   return (
     <>
-      <container className="detail-card">
-      <h3>Usersname</h3>
-        <p>Bio goes here</p>
+      <div className="detail-card">
+      <h3>{user.name}</h3>
+        <p>{user.bio}</p>
         {/* <a href="#">Instagram</a> */}
         {/* <a href="#">Twitter</a> */}
         <hr />
-    [nft likes]
+        {/* <button>edit profile</button> */}
+        <Link to="/editprofile">Edit Profile</Link>
+    {/* [nft likes] */}
         <hr/>
+        {/* <ProfileForm /> */}
 
 
-      <button onClick={handleCheckToken}>Check When My Login Expires</button>
-      </container>
+      </div>
     </>
   );
 }

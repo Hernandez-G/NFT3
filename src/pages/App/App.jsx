@@ -2,16 +2,14 @@ import { useState } from 'react';
 import {  Routes, Route, useNavigate } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 import AuthPage from '../AuthPage/AuthPage';
-// import NewOrderPage from '../NewOrderPage/NewOrderPage';
 import UserProfile from '../UserProfile/UserProfile';
 import NavBar from '../../components/NavBar/NavBar';
-// import SearchBar from '../../components/SearchBar/SearchBar';
 import NftsPage from '../NftsPage/NftsPage';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NftDetailsPage from "../NftDetailsPage/NftDetailsPage"
+import EditProfile from "../EditProfile/EditProfile"
 import * as nftAPI from "../../utilities/NFTs-api"
-// import * as nftAPI from "../../utilities/NFTs-api"
 
 
 function App() {
@@ -44,8 +42,9 @@ function App() {
           <Routes>
             {/* Route components in here */}
             <Route path="/nftspage" element={<NftsPage nfts={nfts} />} />
-            <Route path="/userprofile" element={<UserProfile />} />
+            <Route path="/userprofile" element={<UserProfile user={user}/>} />
             <Route path="/nftdetails/:id" element={<NftDetailsPage nfts={nfts} />} />
+            <Route path="/editprofile" element={<EditProfile />} />
           
 
           </Routes>

@@ -1,10 +1,8 @@
 .nft-container{
     display: grid;
-    grid-template-rows: auto;
     grid-template-columns: 50vmin 50vmin 50vmin 50vmin;
     margin: 10px;
     font-family: 'Courier New', Courier, monospace;
-    color: #eee;
     width: 500px;
     height: 500px;
     background-color: rgb(255, 255, 255);
@@ -15,16 +13,6 @@
 	user-select: none;
 	width: 100vmin;
 	height: 50vmin;
-	margin: 5rem auto;
-	border: 1px solid #ffffff22;
-	background-color: #282c34;
-	background: linear-gradient(0deg, #282c34 0%, rgba(17, 0, 32, 0.5) 100%);
-	box-shadow: 0 7px 20px 5px #00000088;
-	border-radius: .7rem;
-	backdrop-filter: blur(7px);
-	-webkit-backdrop-filter: blur(7px);
-	overflow: hidden;
-	transition: .5s all;
 }
 
 
@@ -38,5 +26,25 @@
 .nft-name{
     color: red;
     font-weight: bolder;
+    font-size: 24px;;
 
 }
+
+.main {
+    margin: 5rem auto;
+	border: 1px solid #ffffff22;
+	background-color: #282c34;
+	background: linear-gradient(0deg, #282c34 0%, rgba(17, 0, 32, 0.5) 100%);
+	box-shadow: 0 7px 20px 5px #00000088;
+	border-radius: .7rem;
+	backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(7px);
+	overflow: hidden;
+	transition: .5s all;
+}
+
+.nft-name.card.title.h5 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
