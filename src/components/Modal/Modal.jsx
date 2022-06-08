@@ -1,8 +1,16 @@
 import { useState } from "react";
+import CommentSectionForm from "../CommentSectionForm/CommentSectionForm";
+import { GoComment } from "react-icons/go";
+
 import "./Modal.css"
 
 export default function Modal() {
   const [modal, setModal] = useState(false);
+  const [comments, setComments] = useState('');
+
+  function addComment(newComment) {
+    setComments(`${comments}\n${newComment}`)
+  }
 
   const toggleModal = () => {
     setModal(!modal);
@@ -11,7 +19,7 @@ export default function Modal() {
 
   return(
     <>
-    <button onClick={toggleModal} className="btn-modal">open</button>
+    <button onClick={toggleModal} className="btn-modal"> <GoComment /> </button>
 
     {modal && 
     
@@ -19,8 +27,8 @@ export default function Modal() {
     <div onClick={toggleModal} className="overlay" ></div>
     <div className="modal-content">
       <h2>Open Modal</h2>
-      <p>habghbagljanjkgndakjnbg
-      </p>
+        <CommentSectionForm addComment={addComment}/>
+      <pre>{comments}</pre>
     </div>
     </div>
     

@@ -4,7 +4,7 @@ import "./NftDetailsPage.css";
 import { useParams } from "react-router-dom";
 // import { CgDetailsMore } from "react-icons/cg"
 import Modal from '../../components/Modal/Modal';
-import CommentSectionForm from '../../components/CommentSectionForm/CommentSectionForm'
+// import CommentSectionForm from '../../components/CommentSectionForm/CommentSectionForm'
 
 
 
@@ -33,7 +33,7 @@ function NftDetailsPage({nfts}) {
         </p> 
         <hr />
         <Modal />
-        <CommentSectionForm />
+        
         </>
 
     )
