@@ -3,7 +3,8 @@ import React from 'react';
 import "./NftDetailsPage.css";
 import { useParams } from "react-router-dom";
 // import { CgDetailsMore } from "react-icons/cg"
-import LikeButton from '../../components/LikeButton/LikeButton';
+import Modal from '../../components/Modal/Modal';
+import CommentSectionForm from '../../components/CommentSectionForm/CommentSectionForm'
 
 
 
@@ -31,7 +32,8 @@ function NftDetailsPage({nfts}) {
         {nft.mint_date}  
         </p> 
         <hr />
-        <LikeButton />
+        <Modal />
+        <CommentSectionForm />
         </>
 
     )
