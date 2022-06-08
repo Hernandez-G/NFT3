@@ -6,8 +6,9 @@ export default function Modal() {
 
   const toggleModal = () => {
     setModal(!modal);
+    console.log(modal);
   };
-  
+
   return(
     <>
     <button onClick={toggleModal} className="btn-modal">open</button>
