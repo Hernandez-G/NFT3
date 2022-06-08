@@ -12,11 +12,11 @@ export default function NftPage({nfts}) {
     const allNfts = nfts.map((n, index) => 
         <div className="NftSearch" key={index}>
             <Card style={{ width: '18rem' }}>
-                <Card.Body>
+                <Card.Body className='main'>
                 {/* <CgDetailsMore /> */}
                     <Card.Img src="{n.image}">{n.image}</Card.Img>
                     {/* <img src={n.metadata.owner} /> */}
-                    <Card.Title>{n.name}</Card.Title>
+                    <Card.Title className="nft-name">{n.name}</Card.Title>
                     {/* <Card.Subtitle className="mb-2 text-muted">{n.description}</Card.Subtitle> */}
                     <Card.Text>{n.chain}</Card.Text> 
                     <Card.Text>{n.contract_address}</Card.Text>
@@ -33,6 +33,7 @@ export default function NftPage({nfts}) {
     )
     return(
         <div className="nft-container">
+  
             {allNfts}            
         </div>
     )

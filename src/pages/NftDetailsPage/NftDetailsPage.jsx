@@ -15,15 +15,6 @@ function NftDetailsPage({nfts}) {
     const nft = nfts.find((nft) => id === nft.token_id);
     console.log(nft);
 
-    // const [nftMetadata, setNftMetadata] = useState(" ");
-    // const handleChange = (evt) => {
-    //     setNftMetadata(evt.target.value)
-    //     console.log(nftMetadata);
-    // }
-    // const LikeButton = () => {
-    //     const [liked, setLiked] = useState(null)
-    // }
-
     return (
         <>
         <h1>{nft.name}</h1>

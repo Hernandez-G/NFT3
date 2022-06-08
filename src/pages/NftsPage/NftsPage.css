@@ -12,6 +12,31 @@
 }
 
 .NftSearch{
-    display: grid;
-    width: 500px;
+	user-select: none;
+	width: 100vmin;
+	height: 50vmin;
+	margin: 5rem auto;
+	border: 1px solid #ffffff22;
+	background-color: #282c34;
+	background: linear-gradient(0deg, #282c34 0%, rgba(17, 0, 32, 0.5) 100%);
+	box-shadow: 0 7px 20px 5px #00000088;
+	border-radius: .7rem;
+	backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(7px);
+	overflow: hidden;
+	transition: .5s all;
+}
+
+
+.nft-main{
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    padding: 1rem;
+}
+
+.nft-name{
+    color: red;
+    font-weight: bolder;
+
 }

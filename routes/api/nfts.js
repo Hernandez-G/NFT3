@@ -9,6 +9,4 @@ router.get('/contract_address/:id', nftsCtrl.show);
 
 router.post('/search', nftsCtrl.search);
 
-// router.get('/nfts', nftsCtrl.nft);
-
 module.exports = router;

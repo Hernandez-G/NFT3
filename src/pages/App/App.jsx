@@ -28,7 +28,7 @@ function App() {
   }
     
         async function getNft(searchWord){
-            const nftResult = await nftAPI.search(searchWord)
+            const nftResult = await nftAPI.search(searchWord);
               setNfts(nftResult);
               navigate("/nftspage")
             
