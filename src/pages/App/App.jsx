@@ -11,6 +11,7 @@ import NftDetailsPage from "../NftDetailsPage/NftDetailsPage"
 import EditProfile from "../EditProfile/EditProfile"
 import * as nftAPI from "../../utilities/NFTs-api"
 import HomePage from '../HomePage/HomePage';
+import Favorites from "../Favorites/Favorites"
 
 function App() {
   const [user, setUser] = useState(getUser());
@@ -46,6 +47,7 @@ function App() {
             <Route path="/userprofile" element={<UserProfile user={user}/>} />
             <Route path="/nftdetails/:id" element={<NftDetailsPage nfts={nfts} />} />
             <Route path="/editprofile" element={<EditProfile />} />
+            <Route path="/favorites" element={<Favorites />} />
           
 
           </Routes>

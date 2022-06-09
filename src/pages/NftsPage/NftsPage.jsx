@@ -11,8 +11,8 @@ export default function NftPage({nfts}) {
 
     const allNfts = nfts.map((n, index) => 
         <div className="NftSearch" key={index}>
-            <Card style={{ width: '18rem' }}>
-                <Card.Body className='main'>
+            <Card style={{width: '20rem', height:'40rem'}}>
+                <Card.Body className='main-card'>
                     <Card.Img src={n.cached_file_url} />
                     <Card.Title className="nft-name">{n.name}</Card.Title>
                     <Card.Text>{n.chain}</Card.Text> 

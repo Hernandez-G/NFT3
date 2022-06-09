@@ -17,12 +17,14 @@ function NftDetailsPage({nfts}) {
 
     return (
         <>
-        <h1>{nft.name}</h1>
-        <p>{id}
-        {nft.description} 
-        {nft.mint_date} 
-        </p> 
+        {/* <div className='detail-page'> */}
+        <div className='nft-image'><img src={nft.cached_file_url} alt="nft-img"/></div>
+        <h1 className='nft-detail-name'>{nft.name}</h1>
+        <p className='detail-description'>{nft.description} </p> 
+        {/* {id} */}
+        {/* {nft.mint_date}  */}
         <hr />
+        {/* </div> */}
         <Modal />
         
         </>

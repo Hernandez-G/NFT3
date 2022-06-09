@@ -1,18 +1,10 @@
 import "./UserProfile.css"
-// import ProfileForm from "../../components/ProfileForm/ProfileForm";
 import { Link } from "react-router-dom";
-import * as nftApi from '../../utilities/NFTs-api'
 
 export default function UserProfile({user}) {
 
 
-  async function addToFavorites() {
-    const nftObject = {
-      
-    }
-    // const likedNfts = await nftApi.add()
-  }
-  // console.log(nft)
+
   
   return (
     <>
@@ -24,6 +16,7 @@ export default function UserProfile({user}) {
         <hr />
         {/* <button>edit profile</button> */}
         <Link to="/editprofile">Edit Profile</Link>
+        <Link to="/favorites">Favorites</Link>
     {/* [nft likes] */}
         <hr/>
         {/* <ProfileForm /> */}

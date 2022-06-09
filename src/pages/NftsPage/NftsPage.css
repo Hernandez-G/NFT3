@@ -9,19 +9,19 @@
     color: black;
 }
 
-.NftSearch{
+/* .NftSearch{
 	user-select: none;
 	width: 100vmin;
 	height: 50vmin;
-}
+} */
 
 
-.nft-main{
+/* .nft-main{
     display: flex;
     flex-direction: column;
     width:90%;
     padding: 1rem;
-}
+} */
 
 .nft-name{
     color: red;
@@ -32,7 +32,7 @@
 
 .main {
     margin: 5rem auto;
-	border: 1px solid #ffffff22;
+	/* border: 1px solid #ffffff22; */
 	background-color: #282c34;
 	background: linear-gradient(0deg, #282c34 0%, rgba(17, 0, 32, 0.5) 100%);
 	box-shadow: 0 7px 20px 5px #00000088;
@@ -48,3 +48,11 @@
     font-weight: bold;
 }
 
+.nfts-card{
+    width: 40vmin;
+    height: 60vmin;
+}
+
+Card.body.main{
+    width: 10px;
+}

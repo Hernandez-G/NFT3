@@ -1,10 +1,60 @@
 h1.landing-page{
     display: flex;
     flex-direction: row;
-    font-size: 50px;
+    font-size: 55px;
+    position: static;
+    text-shadow: 2px 2px 4px #000000;
+
 }
 
-.grid-container{
-    display: inline-flex;
+.trending{
+    font-size: 45px;
+    text-shadow: 2px 2px 4px #000000;
+}
 
+.collections{
+    font-size: 45px;
+    text-shadow: 2px 2px 4px #000000;
+}
+.oneOfThree{
+    top:10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-div{
+    border: solid 2px;
+    width: 75vmin;
+    height: 40vmin;
+    position: static;
+    filter: drop-shadow(30px 10px 4px #4444dd);}
+
+
+.card{
+    border: solid 2px;
+    width: 50vmin;
+    height: 30vmin;
+
+}
+
+.twoOfThree{
+    position: static;
+    display: flex;
+    gap: 10px;
+}
+
+.threeOfThree{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: static;
+}
+
+.card-collections{
+    border: solid 2px;
+    width: 45vmin;
+    height: 30vmin;
+    margin-bottom: 10px;
 }

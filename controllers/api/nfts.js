@@ -1,14 +1,32 @@
 const Nft = require('../../models/nft')
-const fetch = require('node-fetch')
+const fetch = require('node-fetch');
+const e = require('express');
 
 module.exports = {
     index,
     show,
     search,
+    addNft
     // nft
 
 };
 
+async function addNft(req, res) {
+    const likedNft = await likedNft.findOne({_id:req.body._id})
+    console.log(likedNft)
+    if (likedNft) {
+        let likedNftUser = likedNft.user.includes(req.user._id)
+        if (likedNftUser) return
+        likedNft.user.push(req.user._id)
+        await likedNft.save()
+        res.json(likedNft)
+    } else {
+        req.body.user = req.user._id
+        const newNft = new likedNft(req.body)
+        await newNft.save()
+        res.json(newNft)
+    }
+}
 // async function nft(req, res) {
 //     console.log('xfbg');
 //     const nftsMetadata = await fetch(`${API_URL}/v0/nft?text=${req.body.query}`,{

@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const favoriteSchema = new Schema({
+const likedNftSchema = new Schema({
     users: [{
         type: Schema.Types.ObjectId,
         ref:'User'
@@ -35,4 +35,4 @@ const favoriteSchema = new Schema({
 
 })
 
-module.exports = mongoose.model( favoriteSchema, 'favoriteSchema');
+module.exports = mongoose.model('favoriteSchema', favoriteSchema);
