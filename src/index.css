@@ -14,8 +14,10 @@
 }
 
 body {
-  padding: 2vmin;
-  height: 100vh;
+  background: linear-gradient(to bottom, #000428, #004e92);   
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 200vmin; */
 }
 
 code {

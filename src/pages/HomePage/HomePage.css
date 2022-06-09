@@ -1,23 +1,29 @@
 h1.landing-page{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
     display: flex;
     flex-direction: row;
-    font-size: 55px;
-    position: static;
-    text-shadow: 2px 2px 4px #000000;
-    font-weight: bolder;
-
-
+    position: absolute;
+    text-shadow: 2px 5px 10px #71719c;
+    left: 15vmin;
+    color: white;
 }
 
 .trending{
-    font-size: 45px;
-    text-shadow: 2px 2px 4px #000000;
-
+    color: white;
+    text-shadow: 2px 5px 10px #71719c;
+    font-weight: 800;
+    font-size: 40px;
+    font-style: normal;
 }
 
 .collections{
-    font-size: 45px;
-    text-shadow: 2px 2px 4px #000000;
+    color: white;
+    text-shadow: 2px 5px 10px #71719c;
+    font-weight: 800;
+    font-size: 40px;
+    font-style: normal;
 }
 .oneOfThree{
     top:10px;
@@ -27,11 +33,11 @@ h1.landing-page{
 }
 
 .video-div{
-    border: solid 2px;
+    border: solid 1px #000428;
     width: 75vmin;
     height: 40vmin;
     position: static;
-    filter: drop-shadow(30px 10px 4px #4444dd);}
+    filter: drop-shadow(30px 10px 4px #5f5f91);}
 
 
 .card{
@@ -60,4 +66,5 @@ h1.landing-page{
     width: 45vmin;
     height: 30vmin;
     margin-bottom: 10px;
+    background-color: white;
 }

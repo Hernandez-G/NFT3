@@ -24,7 +24,7 @@
    padding: 10px;
   }
   
-  .search-bar:hover > input{
+  .search-bar:hover > #outlined-basic{
     width: 200px;
     padding: 0 10px;
   }
@@ -38,7 +38,7 @@
     transform: rotate(360deg) scale(0.8);
   }
 
-  input{
+  #outlined-basic{
     width: 0;
     border: none;
     outline: none;

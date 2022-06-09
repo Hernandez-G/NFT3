@@ -5,3 +5,39 @@
 .wrapper fieldset {
     margin: 20px 0;
 }
+
+.profile-form{
+    border: 4px solid;
+
+}
+
+.edit-profile-h1{
+    color:aliceblue;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    text-shadow: 2px 5px 10px #71719c;
+}
+
+label{
+display: inline-grid;
+color:aliceblue;
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+display: table-cell;
+padding: 0 5px;
+vertical-align: middle;
+}
+
+.photo{
+    width: 25vmin;
+}
+
+textarea{
+    width: 25vmin;
+}
+.save-btn {
+    width: 15vmin;
+    font-size: 25px;
+}

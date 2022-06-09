@@ -11,15 +11,10 @@ export default function UserProfile({user}) {
       <div className="detail-card">
       <h3>{user.name}</h3>
         <p>{user.bio}</p>
-        {/* <a href="#">Instagram</a> */}
-        {/* <a href="#">Twitter</a> */}
         <hr />
-        {/* <button>edit profile</button> */}
-        <Link to="/editprofile">Edit Profile</Link>
-        <Link to="/favorites">Favorites</Link>
-    {/* [nft likes] */}
+        <Link className="edit-profile" to="/editprofile">Edit Profile</Link>
+        <Link className="favorties-link-profile" to="/favorites">Favorites</Link>
         <hr/>
-        {/* <ProfileForm /> */}
 
 
       </div>

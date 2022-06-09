@@ -4,8 +4,16 @@ const BASE_URL = '/api/nfts'
 
 
 
-export function getById(contract_address, token_id) {
-    return sendRequest(`${BASE_URL}/${contract_address}/${token_id}`);
+export function getFavorites() {
+    return sendRequest(`${BASE_URL}/favorites`);
+}
+
+export function toggleLike(tokenId, contractAddress, chain) {
+    return sendRequest(`${BASE_URL}/${tokenId}/toggleLike`, "POST", {contractAddress, chain});
+}
+
+export function getById(contractAddress, tokenId) {
+    return sendRequest(`${BASE_URL}/${contractAddress}/${tokenId}`);
 }
 
 export function search(query) {

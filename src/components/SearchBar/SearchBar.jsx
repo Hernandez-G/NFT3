@@ -21,7 +21,7 @@ export default function SearchBar({handleSearch}) {
           id="outlined-basic"
           variant="outlined"
           label="Search"
-          type="text"
+          // type="text"
           placeholder="search"
           value={search}
           onChange={handleChange}

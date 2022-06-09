@@ -3,6 +3,9 @@ import * as userService from '../../utilities/users-service';
 import SearchBar from '../SearchBar/SearchBar';
 import "./NavBar.css"
 
+import {AiOutlineHome, AiOutlineLogout} from "react-icons/ai"
+import {CgProfile} from "react-icons/cg"
+
 
 export default function NavBar({ user, setUser, handleSearch }) {
 
@@ -18,18 +21,18 @@ export default function NavBar({ user, setUser, handleSearch }) {
     <>
     
     <div><span className='welcome-user'>Welcome, {user.name}</span></div>
-    <nav className='nav-hover'>
+    <nav className='nav-hover' >
       <SearchBar handleSearch={handleSearch} />
       &nbsp; | &nbsp;
-      <Link to="/" class="home-link">Home</Link>
+      <Link to="/" class="home-link"><AiOutlineHome /></Link>
       &nbsp; | &nbsp;
-      <Link to="/userprofile" className="user-profile">Profile</Link>
+      <Link to="/userprofile" className="user-profile"><CgProfile /></Link>
       &nbsp; | &nbsp;
       <Link to="/orders/new" >New Order</Link>
       &nbsp; | &nbsp;
       {/* <span className='welcome-user'>Welcome, {user.name}</span> */}
       {/* &nbsp; | &nbsp; */}
-      <Link to="" onClick={handleLogOut} className="log-out-link">Log Out</Link>
+      <Link to="" onClick={handleLogOut} className="log-out-link"><AiOutlineLogout /></Link>
     </nav>
     </>
   );

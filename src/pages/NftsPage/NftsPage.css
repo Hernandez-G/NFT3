@@ -1,11 +1,15 @@
+body{
+    background: linear-gradient(to bottom, #000428, #004e92);   
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
 .nft-container{
     display: grid;
     grid-template-columns: 50vmin 50vmin 50vmin 50vmin;
     margin: 10px;
     font-family: 'Courier New', Courier, monospace;
-    width: 500px;
-    height: 500px;
-    background-color: rgb(255, 255, 255);
     color: black;
 }
 

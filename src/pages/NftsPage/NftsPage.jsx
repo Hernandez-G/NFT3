@@ -3,11 +3,19 @@ import { Card } from "react-bootstrap";
 import "./NftsPage.css";
 import { Link } from "react-router-dom"
 import { CgDetailsMore } from "react-icons/cg"
+import { BiHeart } from "react-icons/bi"
+import * as nftApi from "../../utilities/NFTs-api"
+import { useNavigate } from 'react-router-dom';
 
 
 
 export default function NftPage({nfts}) {
+    const navigate = useNavigate();
 
+    async function handleLikedNft(tokenId, contractAddress, chain) {
+        await nftApi.toggleLike(tokenId, contractAddress, chain);
+        navigate('/favorites');
+    }
 
     const allNfts = nfts.map((n, index) => 
         <div className="NftSearch" key={index}>
@@ -19,13 +27,13 @@ export default function NftPage({nfts}) {
                     <Card.Text>{n.contract_address}</Card.Text>
                     <Link to={`/nftdetails/${n.token_id}`}> <CgDetailsMore /> </Link>
                     <Link to="/creatorprofile">Creator</Link>
+                    <button onClick={() => handleLikedNft(n.token_id, n.contract_address, n.chain)}><BiHeart /></button>
                 </Card.Body>
                 </Card>
         </div>
     )
     return(
         <div className="nft-container">
-  
             {allNfts}            
         </div>
     )
