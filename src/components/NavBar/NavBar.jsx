@@ -15,6 +15,9 @@ export default function NavBar({ user, setUser, handleSearch }) {
   }
 
   return (
+    <>
+    
+    <div><span className='welcome-user'>Welcome, {user.name}</span></div>
     <nav className='nav-hover'>
       <SearchBar handleSearch={handleSearch} />
       &nbsp; | &nbsp;
@@ -24,9 +27,10 @@ export default function NavBar({ user, setUser, handleSearch }) {
       &nbsp; | &nbsp;
       <Link to="/orders/new" >New Order</Link>
       &nbsp; | &nbsp;
-      <span className='welcome-user'>Welcome, {user.name}</span>
-      &nbsp; | &nbsp;
+      {/* <span className='welcome-user'>Welcome, {user.name}</span> */}
+      {/* &nbsp; | &nbsp; */}
       <Link to="" onClick={handleLogOut} className="log-out-link">Log Out</Link>
     </nav>
+    </>
   );
 }

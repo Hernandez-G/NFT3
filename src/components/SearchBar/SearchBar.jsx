@@ -1,5 +1,6 @@
 import "./SearchBar.css";
 import { useState} from 'react';
+import { BiSearch } from "react-icons/bi"
 
 // import * as nftAPI from "../../utilities/NFTs-api"
 
@@ -15,17 +16,17 @@ export default function SearchBar({handleSearch}) {
       
 
     return(
-        <div className="search">
+        <div className="search-bar">
         <input
           id="outlined-basic"
           variant="outlined"
           label="Search"
+          type="text"
+          placeholder="search"
           value={search}
           onChange={handleChange}
         />
-        <button onClick={()=> handleSearch(search)}> 
-              Click Me!
-          </button>
+        <button className="icon" onClick={()=> handleSearch(search)}> <BiSearch /></button>
       </div>
     )
 }
