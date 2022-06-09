@@ -16,8 +16,9 @@ export default function NavBar({ user, setUser, handleSearch }) {
 
   return (
     <nav className='nav-hover'>
-      &nbsp; | &nbsp;
       <SearchBar handleSearch={handleSearch} />
+      &nbsp; | &nbsp;
+      <Link to="/" class="home-link">Home</Link>
       &nbsp; | &nbsp;
       <Link to="/userprofile" className="user-profile">Profile</Link>
       &nbsp; | &nbsp;

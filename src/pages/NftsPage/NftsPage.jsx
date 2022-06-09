@@ -13,8 +13,7 @@ export default function NftPage({nfts}) {
         <div className="NftSearch" key={index}>
             <Card style={{ width: '18rem' }}>
                 <Card.Body className='main'>
-                {/* <CgDetailsMore /> */}
-                    <Card.Img src="{n.image}">{n.image}</Card.Img>
+                    <Card.Img src={n.cached_file_url} />
                     <Card.Title className="nft-name">{n.name}</Card.Title>
                     <Card.Text>{n.chain}</Card.Text> 
                     <Card.Text>{n.contract_address}</Card.Text>

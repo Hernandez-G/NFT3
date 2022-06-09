@@ -1,5 +1,10 @@
-export default function NewOrderPage() {
-  return (
-    <h1>NewOrderPage</h1>
-  );
-}
+// export default function NewOrderPage() {
+
+// async function addToFavorites() {
+//   const liked  =
+// }
+
+//   return (
+//     <h1>NewOrderPage</h1>
+//   );
+// }
