@@ -12,9 +12,10 @@ function FavoritesPage() {
         getFavorties();
     }, []);
 
-    const nftCards = nfts.map(n => <div> {n.name} </div>);
+    const nftCards = nfts.map(n => <div> {n.name} <img src={n.imageUrl}/> </div>);
+
     return(
-        <main>
+        <main className="main-favorites">
             <h1>Your Favorites</h1>
             {nftCards}
         

@@ -13,20 +13,6 @@ body{
     color: black;
 }
 
-/* .NftSearch{
-	user-select: none;
-	width: 100vmin;
-	height: 50vmin;
-} */
-
-
-/* .nft-main{
-    display: flex;
-    flex-direction: column;
-    width:90%;
-    padding: 1rem;
-} */
-
 .nft-name{
     color: red;
     font-weight: bolder;

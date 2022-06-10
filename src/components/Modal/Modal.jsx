@@ -20,7 +20,7 @@ export default function Modal() {
     console.log(modal);
   };
 
-  
+
   return(
     <>
     <button onClick={toggleModal} className="btn-modal"> <GoComment /> </button>

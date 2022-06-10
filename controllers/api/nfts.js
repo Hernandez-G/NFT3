@@ -8,8 +8,14 @@ module.exports = {
     show,
     search,
     toggleLike,
-    getFavorites
+    getFavorites,
+    // removeFavorites
 };
+
+// async function removeFavorites(req, res){
+//     const removeFav = await Nft.findOneAndDelete(req.params.tokenId)
+//     res.json(removeFav);
+// }
 
 async function getFavorites(req, res) {
     const favs = await Nft.find({users: req.user._id});

@@ -9,6 +9,8 @@ function CommentSectionForm({addComment}) {
   const handleComment = evt => {
       setComment(evt.target.value);
     }
+
+    
     
 
     
