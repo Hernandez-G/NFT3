@@ -19,14 +19,13 @@ function ProfileForm({user}) {
         console.log(profile)
         // when submitted data is loading
         setTimeout(() => {
-            setSubmitting(false);
+            setSubmitting(setSubmitting);
         
         }, 2000)
     }
     
     function handleChange(evt) {
         setUserUpdate({...userUpdate, [evt.target.name]: evt.target.value });
-        
     }
 console.log(userUpdate);
         
@@ -55,16 +54,6 @@ console.log(userUpdate);
                             placeholder="Tell us about yourself"
                             name="bio" 
                             required/>
-                            {/* <label>Instagram</label>
-                            <input 
-                            name="name"
-                            placeholder="Insert Link"
-                            />
-                            <label>Twitter</label>
-                            <input 
-                            name="name"
-                            placeholder="Insert Link"
-                             /> */}
                             <button className="save-btn" type="submit" >Save</button>
                     </fieldset>
 

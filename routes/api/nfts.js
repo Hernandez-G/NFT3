@@ -14,4 +14,6 @@ router.post('/search', nftsCtrl.search);
 
 router.post('/:tokenId/toggleLike', nftsCtrl.toggleLike);
 
+router.delete('/:id', nftsCtrl.removeFavorites);
+
 module.exports = router;

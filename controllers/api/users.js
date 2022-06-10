@@ -16,7 +16,6 @@ async function update(req, res){
   user.bio=req.body.bio
   console.log(user);
   user.save();
-  
 }
 
 function checkToken(req, res) {

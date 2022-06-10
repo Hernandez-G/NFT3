@@ -1,6 +1,7 @@
 const Nft = require('../../models/nft')
 const fetch = require('node-fetch');
-const user = require('../../models/user');
+// const user = require('../../models/user');
+// const nft = require('../../models/nft');
 const API_URL = "https://api.nftport.xyz"
 
 module.exports = {
@@ -9,13 +10,15 @@ module.exports = {
     search,
     toggleLike,
     getFavorites,
-    // removeFavorites
+    removeFavorites
 };
 
-// async function removeFavorites(req, res){
-//     const removeFav = await Nft.findOneAndDelete(req.params.tokenId)
-//     res.json(removeFav);
-// }
+async function removeFavorites(req, res){
+    const removeFav = await Nft.findOneAndDelete({_id: req.params.id, users: req.user._id});
+    console.log(removeFav);
+    res.json(removeFav)
+
+}
 
 async function getFavorites(req, res) {
     const favs = await Nft.find({users: req.user._id});

@@ -1,8 +1,21 @@
 .edit-profile {
     text-decoration: none;
+    color: white;
+    font-size: 2vmin;
 }
 
 .favorties-link-profile {
-
+    color: white;
+    font-size: 2vmin;
+    font-style: normal;
     text-decoration: none;
+}
+
+.favorites-page-icon{
+    font-size: 24px;
+}
+.favorites-page-icon:hover{
+    color:red;
+    font-weight: bold;
+
 }

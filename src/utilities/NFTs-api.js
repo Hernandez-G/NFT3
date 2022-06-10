@@ -3,6 +3,9 @@ import sendRequest from './send-request';
 const BASE_URL = '/api/nfts'
 
 
+export function removeFavorites(id) {
+    return sendRequest(`${BASE_URL}/${id}`, 'DELETE');
+}
 
 export function getFavorites() {
     return sendRequest(`${BASE_URL}/favorites`);

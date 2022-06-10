@@ -1,0 +1,55 @@
+
+/* glassmorphism */
+.login-form-container {
+    justify-content: center;
+    padding: 3rem;
+    align-items: center;
+    display: flex;
+    backdrop-filter: blur(7px) saturate(500%);
+    background-color: rgba(233, 239, 250, 0.5);
+    border: 5px solid rgba(252, 247, 247, 0.3);
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.301);
+    border-radius: 12px;
+    margin: 10rem;
+    width: 25rem;
+    height: 40rem;
+}
+.email-label{
+    right: 10vmin;
+    color: black;
+}
+.email{
+    height:3rem;
+    width:10rem;
+}
+.pswd-label{
+    color:black
+}
+
+.password{
+    height: 3rem;
+    width: 10rem;
+}
+
+.login-btn {
+    left: 12rem;
+    bottom: -1rem;
+    width: 5rem;
+    height: 3rem;
+    border-radius: 2px;
+}
+
+.loginForm{
+    position: absolute;
+    right: 8rem;
+
+}
+
+/* .nft-display{
+    position: absolute;
+    left: 4rem;
+    bottom: 7vmin;
+    height: 50vmin;
+    width: 60vmin;
+    border: 2px solid green;
+} */

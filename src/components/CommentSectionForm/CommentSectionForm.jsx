@@ -10,11 +10,7 @@ function CommentSectionForm({addComment}) {
       setComment(evt.target.value);
     }
 
-    
-    
-
-    
-    
+  
     return (
       <>
       
