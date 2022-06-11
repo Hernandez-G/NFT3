@@ -11,6 +11,8 @@
 	backdrop-filter: blur(7px);
 	overflow: hidden;
 	transition: .5s all;
+	gap: 15px;
+	margin-left: 5px;
 }
 
 img.nftImage{
