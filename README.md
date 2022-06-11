@@ -4,4 +4,8 @@
     After creating a profile, users can search for NFTs and begin adding them to their profile once they have found the ones they like.
     There is an option for users to update their username and bio.
 </p>
-<p font-weight: bold>Screenshots</p>
+<a href="#">[Launch App]<a> :&nbsp :&nbsp
+<a href="#">[Screenshots]<a> :&nbsp :&nbsp
+<a href="#">[WireFrame]<a> :&nbsp :&nbsp
+
+<h2>Technology Used</h2>
