@@ -1,5 +1,7 @@
 .favNftDisplay{
-	/* display: grid; */
+	display: grid;
+	grid-template-columns: 50vmin 50vmin 50vmin;
+	grid-template-rows: 76vmin 50vmin;
 	color: white;
     margin: 5rem auto;
 	background-color: #8390aa;
@@ -9,9 +11,18 @@
 	backdrop-filter: blur(7px);
 	overflow: hidden;
 	transition: .5s all;
-    width: 25%;
 }
 
 img.nftImage{
 	width: -webkit-fill-available;
+}
+
+.favtitle {
+	color: white;
+}
+
+.mainCard{
+	display: grid;
+	grid-template-columns: 50vmin 50vmin 50vmin;
+	grid-template-rows: 75vmin 50vmin;
 }

@@ -1,10 +1,7 @@
-// import { useParams } from "react-router-dom";
 import React from 'react';
 import "./NftDetailsPage.css";
 import { useParams } from "react-router-dom";
-// import { CgDetailsMore } from "react-icons/cg"
 import Modal from '../../components/Modal/Modal';
-// import CommentSectionForm from '../../components/CommentSectionForm/CommentSectionForm'
 
 
 

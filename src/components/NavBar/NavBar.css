@@ -1,27 +1,142 @@
-.nav-hover {
-    box-shadow: 4px 4px 4px 0 #000428;
-    text-decoration: none;
-}
+/* .nav-hover {
+    justify-content: end;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+    top: 0;
+    height: 2vmin;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(255, 252, 252, 0.582);
+    
+} */
 
-.home-link{
-    font-size: 25px;
-    text-decoration: none;
-}
-
-.user-profile {
-    font-size: 25px;
-    text-decoration: none;
-}
-
-.log-out-link{
-    font-size: 25px;
-    text-decoration: none;
-}
 
 .welcome-user{
-    color: white;
-    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
     font-style: normal;
     font-weight: 800;
 
+}
+
+
+.container {
+    max-width: 1050px;
+    /* width: 90%; */
+    margin: auto;
+  }
+  
+  .navbar {
+    width: 100%;
+    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+  }
+  
+  .navbar nav-items {
+    display: flex;
+  }
+  
+  .navbar .nav-container li {
+    list-style: none;
+  }
+  
+  .navbar .nav-container a {
+    text-decoration: none;
+    color: #0e2431;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+  }
+  
+  .navbar .nav-container a:hover{
+      font-weight: bolder;
+  }
+  
+  .nav-container {
+    display: block;
+    position: relative;
+    height: 60px;
+  }
+  
+  .nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .nav-container .hamburger-lines {
+    height: 3.5vmin;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .nav-container .hamburger-lines .line {
+    margin: 3px;
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #fafafa;
+  }
+  
+  
+  .navbar .nav-items {
+    background: rgba(255,255,255,0.15);
+    -webkit-backdrop-filter: blur(31px);
+    backdrop-filter: blur(31px);
+    border: 1px solid rgba(255,255,255,0.075);
+    padding-top: 60px;
+    box-shadow: inset 0 0 100vmin rgb(226 226 226);
+    height: 50vh;
+    width: 100%;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: 48px;
+    padding-left: 40px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+}
+  
+  .navbar .nav-items li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    
+  }
+  
+  
+  .nav-container input[type="checkbox"]:checked ~ .nav-items {
+    transform: translateX(0);
+  }
+  
+.NavLinks {
+    align-items: center;
+    display: grid;
+    justify-content: center;
+}
+
+.searchBarNav{
+  position:absolute;
+  right: 10vmin;
 }

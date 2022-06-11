@@ -1,7 +1,26 @@
+.user\.user{
+    display: flex;
+    gap: 10%;
+    /* width: 100px; */
+}
+.userProfile{
+    display: grid;
+    border: 3px solid white;
+    width: 45%;
+
+}
+
+.userDetails{
+    margin: 0;
+    color: white;
+    font-size: 35px;
+}
+
 .edit-profile {
     text-decoration: none;
     color: white;
     font-size: 2vmin;
+    border: 2px solid white;
 }
 
 .favorties-link-profile {
@@ -19,3 +38,20 @@
     font-weight: bold;
 
 }
+
+.userPhoto{
+    margin-top: 2vmin;
+    margin-left: 6vmin;
+    width: 42vmin;
+    height: 42vmin;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+/* .secondBorder{
+    margin-left: 6vmin;
+    width: 40vmin;
+    height: 40vmin;
+    border: 3px solid white;
+    border-radius: 50%;
+} */

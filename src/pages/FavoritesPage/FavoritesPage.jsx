@@ -36,12 +36,14 @@ function FavoritesPage() {
 
     return(
         <main>
-            <h1>Your Favorites</h1>
-            <Card.Body className='main-card'>
-            <div className="favNftDisplay"> 
-            {nftCards} 
+            <div>
+                <h1 className="favtitle">Your Favorites</h1>
+                <Card.Body className='mainCard'>
+                <div className="favNftDisplay"> 
+                    {nftCards} 
+                </div>
+                </Card.Body>
             </div>
-            </Card.Body>
         </main>
         
         
