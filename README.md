@@ -9,6 +9,7 @@
 <a href="#">[WireFrame]<a> :&nbsp :&nbsp
 
 <h2>Technology Used</h2>
+
 ![HTML5](https://img.shields.io/badge/-HTML5-333?style=flat&logo=html5)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-333?style=flat&logo=javascript) 
 ![CSS3](https://img.shields.io/badge/-CSS-333?style=flat&logo=css3)
