@@ -22,3 +22,4 @@
 ![Trello](https://img.shields.io/badge/-Trello-333?style=flat&logo=trello)
 ![React](https://img.shields.io/badge/-React-333?style=flat&logo=react)
 ![Figma](https://img.shields.io/badge/-Figma-333?style=flat&logo=figma)
+![Npm](https://img.shields.io/badge/-Npm-333?style=flat&logo=npm)
