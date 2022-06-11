@@ -1,25 +1,15 @@
 .favNftDisplay{
+	/* display: grid; */
+	color: white;
     margin: 5rem auto;
-	/* border: 1px solid #ffffff22; */
-	background-color: #282c34;
-	background: linear-gradient(0deg, #282c34 0%, rgba(17, 0, 32, 0.5) 100%);
+	background-color: #8390aa;
+	background: linear-gradient(0deg, #768ab3 0%, rgba(17, 0, 32, 0.5) 100%);
 	box-shadow: 0 7px 20px 5px #00000088;
 	border-radius: .7rem;
 	backdrop-filter: blur(7px);
-	-webkit-backdrop-filter: blur(7px);
 	overflow: hidden;
 	transition: .5s all;
-    width: -webkit-fill-available;
-}
-
-
-
-.main-favorites{
-    display: grid;
-    grid-template-columns: 50vmin 50vmin 50vmin 50vmin;
-    margin: 10px;
-    font-family: 'Courier New', Courier, monospace;
-    color: black;
+    width: 25%;
 }
 
 img.nftImage{

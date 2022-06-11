@@ -19,10 +19,12 @@ function FavoritesPage() {
 
 
 
-    const nftCards = nfts.map(n => <div> {n.name} <img className="nftImage" src={n.imageUrl}/> 
+    const nftCards = nfts.map(n => 
+    <div className="detailsFavNFT"> {n.name} <img className="nftImage" src={n.imageUrl}/> 
     
     <button type="button" onClick={() => removeLike(n._id)} > <IoHeartDislikeOutline /> </button>
-    </div>);
+    </div>
+    );
 
     async function removeLike(id) {
         const removeNftCards = await nftApi.removeFavorites(id);
@@ -35,13 +37,11 @@ function FavoritesPage() {
     return(
         <main>
             <h1>Your Favorites</h1>
-            <Card style={{width: '20rem', height:'30rem'}}>
             <Card.Body className='main-card'>
             <div className="favNftDisplay"> 
             {nftCards} 
             </div>
             </Card.Body>
-            </Card>
         </main>
         
         
