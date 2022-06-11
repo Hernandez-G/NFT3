@@ -1,1 +1,1 @@
-<h1>NFT3</h1>
+<h1 align="center">NFT3</h1>
