@@ -25,12 +25,12 @@
 ![Npm](https://img.shields.io/badge/-Npm-333?style=flat&logo=npm)
 
 <h3>FUTURE UPDATES:</h3>
-<li>[] Add About Page</li>
-<li>[] Add Resource Page</li>
-<li>[] Render Upcoming NFTs</li>
-<li>[] Implement Live Comments</li>
-<li>[] Add Animated Landing Page</li>
-<li>[] Link Creators Profile to NFTs</li>
-<li>[] Show Users and Creators Followers</li>
-<li>[] Add Animated Loading Page to NFTs Page</li>
-<li>[] Functionality to allow users to follow NFT creator</li>
+<li>\[] Add About Page</li>
+<li>\[] Add Resource Page</li>
+<li>\[] Render Upcoming NFTs</li>
+<li>\[] Implement Live Comments</li>
+<li>\[] Add Animated Landing Page</li>
+<li>\[] Link Creators Profile to NFTs</li>
+<li>\[] Show Users and Creators Followers</li>
+<li>\[] Add Animated Loading Page to NFTs Page</li>
+<li>\[] Functionality to allow users to follow NFT creator</li>
