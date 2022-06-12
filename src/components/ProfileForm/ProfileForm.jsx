@@ -54,7 +54,7 @@ console.log(userUpdate);
                             placeholder="Tell us about yourself"
                             name="bio" 
                             required/>
-                            <button className="save-btn" type="submit" >Save</button>
+                            <button className="save-btn" type="submit" handleChange={handleChange}>Save</button>
                     </fieldset>
 
                 </form>

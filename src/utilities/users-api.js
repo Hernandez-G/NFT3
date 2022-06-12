@@ -4,6 +4,9 @@ import sendRequest from './send-request';
 const BASE_URL = '/api/users';
 
 
+export function getProfile() {
+  return sendRequest(`${BASE_URL}`);
+}
 export function updateProfile(userData) {
   return sendRequest(`${BASE_URL}/update`, 'POST', userData);
 }
