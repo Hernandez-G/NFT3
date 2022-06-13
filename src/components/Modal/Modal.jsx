@@ -23,6 +23,8 @@ export default function Modal() {
 
   return(
     <>
+  <div className="little-btns">
+
     <button onClick={toggleModal} className="btn-modal"> <GoComment /> </button>
 
     {modal && 
@@ -30,7 +32,7 @@ export default function Modal() {
     <div className="modal">
     <div onClick={toggleModal} className="overlay" ></div>
     <div className="modal-content">
-      <h2 className="comment-title-modal">Open Modal</h2>
+      <h2 className="comment-title-modal">Comment</h2>
         <CommentSectionForm addComment={addComment}/>
       <pre>{comments}</pre>
     </div>
@@ -38,6 +40,8 @@ export default function Modal() {
     
   }
   <button> <FiHeart /> </button>
+
+  </div>
     </>
   );
 }

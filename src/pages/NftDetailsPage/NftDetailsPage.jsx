@@ -2,6 +2,7 @@ import React from 'react';
 import "./NftDetailsPage.css";
 import { useParams } from "react-router-dom";
 import Modal from '../../components/Modal/Modal';
+import { Container } from 'react-bootstrap';
 
 
 
@@ -14,14 +15,15 @@ function NftDetailsPage({nfts}) {
 
     return (
         <>
-        {/* <div className='detail-page'> */}
-        <div className='nft-image'><img src={nft.cached_file_url} alt="nft-img"/></div>
+        <br />
+        <br />
         <h1 className='nft-detail-name'>{nft.name}</h1>
+        <br />
+        <br />
+        <container className="nftImgCont">
+        <img className='nft-image' src={nft.cached_file_url} alt="nft-img"/>
+        </container>
         <p className='detail-description'>{nft.description} </p> 
-        {/* {id} */}
-        {/* {nft.mint_date}  */}
-        <hr />
-        {/* </div> */}
         <Modal />
         
         </>

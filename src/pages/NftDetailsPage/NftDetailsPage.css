@@ -1,40 +1,33 @@
-/* .detail-page {
-    display: flex;
-    flex-flow: row wrap;
-    font-family: sans-serif;
-    
-  } */
-
-/* .random{
-    font-size: 30px;
-    color: black;
-} */
+.nftImgCont{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
 
 .nft-image{
-display: flex; 
-width: 50%
+    background-color:#aaa;
+    width: 35%;
+}
+
+h1.nft-detail-name{
+    font-size: 40px;
+    text-align: center;
 }
 
 .nft-detail-name{
-    /* display: flex; */
     font-size: 24px;
-    color: #222;
+    color: rgb(255, 255, 255);
     line-height: 24px;
+    font-size: 25px;
 }
 
 .detail-description {
     display: flex;
-    width: 60vmin;
-    color: #555;
-    border:#222 3px solid;
+    width: 80vmin;
+    color: rgb(255, 255, 255);
     position: absolute;
     right: 25vmin;
-    top:10vmin;
+    text-align: justify;
 }
 
-h1.nft-detail-name{
-    text-align: center;
-    position:absolute;
-    right: 38vmin;
-    top: 20vmin;
+.modal-btns {
+    justify-content: center;
 }

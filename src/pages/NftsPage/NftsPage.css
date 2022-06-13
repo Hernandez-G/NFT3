@@ -6,9 +6,10 @@ body{
 }
 
 .nft-container{
+    justify-content: center;
     display: grid;
-    grid-template-columns: 50vmin 50vmin 50vmin 50vmin;
-    margin: 10px;
+    grid-template-columns: 37vmin 37vmin 37vmin 37vmin 37vmin;
+    margin: 37px;
     font-family: 'Courier New', Courier, monospace;
     color: black;
 }
@@ -45,4 +46,8 @@ body{
 
 Card.body.main{
     width: 10px;
+}
+
+.NftSearch {
+    width: 10%;;
 }

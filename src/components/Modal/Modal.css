@@ -1,6 +1,14 @@
+.little-btns{
+    /* position: absolute; */
+    margin: 22vmin;
+    justify-content: center;
+    align-items: baseline;
+    /* display: flex; */
+    /* flex-direction: row; */
+    bottom: 50px;
+}
+
 .btn-modal {
-  padding: 10px 20px;
-  display: block;
   margin: 100px auto 0;
   font-size: 18px;
 }
