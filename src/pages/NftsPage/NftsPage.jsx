@@ -33,8 +33,12 @@ export default function NftPage({nfts}) {
         </div>
     )
     return(
+        <>
+        <h1 className='Results'> Search Results: </h1>
         <div className="nft-container">
             {allNfts}            
         </div>
+        
+        </>
     )
 }

@@ -1,6 +1,6 @@
-.favNftDisplay{
+/* .favNftDisplay{
 	display: grid;
-	grid-template-columns: 50vmin 50vmin 50vmin;
+	grid-template-columns: 50vmin;
 	grid-template-rows: 76vmin 50vmin;
 	color: white;
     margin: 5rem auto;
@@ -13,7 +13,7 @@
 	transition: .5s all;
 	gap: 15px;
 	margin-left: 5px;
-}
+}  */
 
 img.nftImage{
 	width: -webkit-fill-available;
@@ -27,4 +27,22 @@ img.nftImage{
 	display: grid;
 	grid-template-columns: 50vmin 50vmin 50vmin;
 	grid-template-rows: 75vmin 50vmin;
+	gap: 10px;
+}
+.detailsFavNFT {
+	display: grid;
+	grid-template-columns: 50vmin;
+	grid-template-rows: 2vmin 45vmin;
+	display: grid;
+	color: white;
+	font-weight: bold;
+    margin: 5rem auto;
+	background-color: #8390aa;
+	background: linear-gradient(0deg, #768ab3 0%, rgba(17, 0, 32, 0.5) 100%);
+	box-shadow: 0 7px 20px 5px #00000088;
+	border-radius: .7rem;
+	backdrop-filter: blur(7px);
+	overflow: hidden;
+	transition: .5s all;
+	gap: 15px;
 }

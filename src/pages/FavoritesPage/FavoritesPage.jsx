@@ -38,11 +38,11 @@ function FavoritesPage() {
         <main>
             <div>
                 <h1 className="favtitle">Your Favorites</h1>
-                <Card.Body className='mainCard'>
                 <div className="favNftDisplay"> 
+                <Card.Body className='mainCard'>
                     {nftCards} 
-                </div>
                 </Card.Body>
+                </div>
             </div>
         </main>
         

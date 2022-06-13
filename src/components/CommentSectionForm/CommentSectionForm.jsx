@@ -20,13 +20,13 @@ function CommentSectionForm({addComment}) {
         }}>
 
       <div>
-      <label>
+      {/* <label> */}
       {/* custom username */}
-      Name:
-      </label>
+      
+      {/* </label> */}
       <input 
       type="text" 
-      placeholder="comment here"
+      placeholder="Leave A Comment"
       onChange={handleComment}
       value={comment}
       />

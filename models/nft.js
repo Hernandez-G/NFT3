@@ -4,7 +4,10 @@ const Schema = mongoose.Schema;
 
 
 const nftSchema = new Schema({
-    name: {type: String, required: true},
+    name: {
+        type: String, 
+        required: true
+    },
     contractAddress: {
         type: String
     },
