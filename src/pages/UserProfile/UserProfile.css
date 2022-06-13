@@ -72,3 +72,10 @@
 /* .photoCardUpload {
 
 } */
+
+
+button.UploadBTN {
+    position: absolute;
+    top: 61vmin;
+    left: 20vmin;
+}

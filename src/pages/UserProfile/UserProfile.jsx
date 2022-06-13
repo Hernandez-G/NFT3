@@ -52,7 +52,7 @@ async function handleUpload() {
         <div className="userPhoto">
         <input type="file" ref={fileInputRef} />
         <input value={title} onChange={(evt) => setTitle(evt.target.value)} placeholder="Photo Title" />
-        <button onClick={handleUpload}>Upload Photo</button>
+        <button className="UploadBTN" onClick={handleUpload}>Upload Photo</button>
         </div>
       &nbsp; &nbsp; &nbsp;
       <div className="userProfile">
