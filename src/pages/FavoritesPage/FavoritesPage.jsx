@@ -22,7 +22,7 @@ function FavoritesPage() {
     const nftCards = nfts.map(n => 
     <div className="detailsFavNFT"> {n.name} <img className="nftImage" src={n.imageUrl}/> 
     
-    <button type="button" onClick={() => removeLike(n._id)} > <IoHeartDislikeOutline /> </button>
+    <button type="button" onClick={() => removeLike(n._id)}><IoHeartDislikeOutline /> </button>
     </div>
     );
 
