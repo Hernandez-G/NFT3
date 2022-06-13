@@ -15,9 +15,9 @@
   
   .search-bar {
    position: absolute;
-   top: 25px;
-   left: 54vmin;
-   transform: translate(-50%, -50%);
+   top: 7px;
+   right: 5vmin;
+   transform: translate(20%);
    background: #2C3441;
    height: 58px;
    border-radius: 40px;

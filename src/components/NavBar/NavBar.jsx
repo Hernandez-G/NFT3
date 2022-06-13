@@ -20,6 +20,7 @@ export default function NavBar({ user, setUser, handleSearch }) {
   return (
     <>
     <nav className='navbar' >
+      <SearchBar className="searchBarNav" handleSearch={handleSearch} />
       <div className='container nav-container'>
       <input class="checkbox" type="checkbox" name="" id="" />
       <div class="hamburger-lines">
@@ -35,7 +36,6 @@ export default function NavBar({ user, setUser, handleSearch }) {
       <Link to="/favorites"> FAVORITES &nbsp; <BiHeart /></Link>
       <Link to="" onClick={handleLogOut} className="log-out-link">LOGOUT &nbsp; <AiOutlineLogout /></Link>
         </div>
-      <SearchBar className="searchBarNav" handleSearch={handleSearch} />
       </div>
       </div>
     </nav>
