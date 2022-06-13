@@ -5,8 +5,8 @@
     There is an option for users to update their username and bio.
 </p>
 <a href="https://nft3-react.herokuapp.com/">[Launch App]<a> :&nbsp :&nbsp
-<a href="#">[Screenshots]<a> :&nbsp :&nbsp
-<a href="#">[WireFrame]<a> :&nbsp :&nbsp
+<a href="https://imgur.com/a/2peN5HE">[Screenshots]<a> :&nbsp :&nbsp
+<a href="https://trello.com/b/sG2Tw2LM/nft-social-market">[WireFrame]<a> :&nbsp :&nbsp
 
 <h2>Technology Used</h2>
 
