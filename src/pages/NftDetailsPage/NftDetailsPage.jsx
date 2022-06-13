@@ -15,6 +15,7 @@ function NftDetailsPage({nfts}) {
 
     return (
         <>
+        <h1>SEARCH:</h1>
         <br />
         <br />
         <h1 className='nft-detail-name'>{nft.name}</h1>

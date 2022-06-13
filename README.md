@@ -4,7 +4,7 @@
     After creating a profile, users can search for NFTs and begin adding them to their profile once they have found the ones they like.
     There is an option for users to update their username and bio.
 </p>
-<a href="#">[Launch App]<a> :&nbsp :&nbsp
+<a href="https://nft3-react.herokuapp.com/">[Launch App]<a> :&nbsp :&nbsp
 <a href="#">[Screenshots]<a> :&nbsp :&nbsp
 <a href="#">[WireFrame]<a> :&nbsp :&nbsp
 
