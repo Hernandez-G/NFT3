@@ -1,6 +1,6 @@
 .PhotoCard {
     display: grid;
-    grid-template-columns: 20vw;
+    /* grid-template-columns: 20vw; */
     grid-template-rows: auto auto;
   }
   

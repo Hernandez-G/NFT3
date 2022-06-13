@@ -60,3 +60,15 @@
 .linksProfile{
     margin:0
 }
+
+.Uploads {
+    color: white;
+}
+.userPhotos {
+        display: flex;
+        justify-content: center;
+}
+
+/* .photoCardUpload {
+
+} */

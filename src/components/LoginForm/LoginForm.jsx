@@ -46,8 +46,6 @@ export default function LoginForm({ setUser }) {
           </div>
         </form>
         <div>
-
-          <h1 className='nft-display'>HI</h1>
         </div>
       </div>
     </div>

@@ -54,9 +54,6 @@ async function handleUpload() {
         <input value={title} onChange={(evt) => setTitle(evt.target.value)} placeholder="Photo Title" />
         <button onClick={handleUpload}>Upload Photo</button>
         </div>
-        <div>
-        {photos.map(p => <PhotoCard photo={p} key={p._id} />)}
-        </div>
       &nbsp; &nbsp; &nbsp;
       <div className="userProfile">
        <h3 className="userDetails">
@@ -73,6 +70,11 @@ async function handleUpload() {
         </div>
         </div>
         <br />
+        <div>
+        <h1 className="Uploads">Your Uploads</h1>
+
+       <div className="userPhotos"> {photos.map(p => <PhotoCard className="photoCardUpload" photo={p} key={p._id} />)} </div>
+        </div>
         <br />
         <br />
         <div className="favProfileContainer">
