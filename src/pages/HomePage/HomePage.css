@@ -1,13 +1,14 @@
 h1.landing-page{
     font-style: normal;
     font-weight: 800;
-    font-size: 40px;
+    font-size: 75px;
     display: flex;
     flex-direction: row;
     position: absolute;
-    text-shadow: 2px 5px 10px #71719c;
-    left: 15vmin;
+    left: 35vmin;
     color: white;
+    text-shadow: 2px 5px 10px #71719c;
+    bottom: 50vmin;
 }
 
 .trending{
@@ -16,7 +17,11 @@ h1.landing-page{
     font-weight: 800;
     font-size: 40px;
     font-style: normal;
+    position: absolute;
+    top: 110vmin;
+    right: 50%;
 }
+
 
 .collections{
     color: white;
@@ -32,13 +37,6 @@ h1.landing-page{
     align-items: center;
 }
 
-.video-div{
-    border: solid 1px #000428;
-    width: 75vmin;
-    height: 40vmin;
-    position: static;
-    filter: drop-shadow(30px 10px 4px #5f5f91);}
-
 
 .card{
     border: solid 2px;
@@ -48,9 +46,13 @@ h1.landing-page{
 }
 
 .twoOfThree{
-    position: static;
+    margin: 2.5vmin;
+    justify-content: center;
+    position: absolute;
     display: flex;
     gap: 10px;
+    overflow: hidden;
+    top:120vmin;
 }
 
 .threeOfThree{
@@ -67,4 +69,59 @@ h1.landing-page{
     height: 30vmin;
     margin-bottom: 10px;
     background-color: white;
+}
+
+img.homeNFT {
+    top: 15vmin;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 35rem;
+    right: 60vmin;
+    position: absolute;
+    margin: 0;
+} 
+
+
+.img1{
+    width: 250px;
+    height: 250px;
+}
+
+.card1 {
+    background-color: white;
+    height: 350px;
+    width: 300px;
+}
+.card2 {
+    background-color: white;
+    height: 350px;
+    width: 300px;
+}
+.card3 {
+    background-color: white;
+    height: 350px;
+    width: 300px;
+}
+
+.card4 {
+    background-color: white;
+    height: 350px;
+    width: 300px;
+}
+
+.link1{
+    text-decoration: none;
+}
+
+.link2{
+    text-decoration: none;
+}
+
+.link3{
+    text-decoration: none;
+}
+
+
+.link4{
+    text-decoration: none;
 }

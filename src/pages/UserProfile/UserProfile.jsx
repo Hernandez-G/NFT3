@@ -30,6 +30,7 @@ updateUserProfile();
        <h3 className="userDetails">
          {profile&&profile.username}
         <p className="bioUser">
+          <br />
           {profile&&profile.bio}
         </p>
       </h3>

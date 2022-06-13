@@ -16,6 +16,8 @@
 }  */
 
 img.nftImage{
+	display: flex;
+	
 	width: -webkit-fill-available;
 }
 
@@ -31,8 +33,9 @@ img.nftImage{
 }
 .detailsFavNFT {
 	display: grid;
-	grid-template-columns: 50vmin;
-	grid-template-rows: 2vmin 45vmin;
+	font-size: 20px;
+	grid-template-columns: 42vmin;
+	grid-template-rows: 12vmin 34vmin;
 	display: grid;
 	color: white;
 	font-weight: bold;
