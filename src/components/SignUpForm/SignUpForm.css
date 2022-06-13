@@ -1,0 +1,8 @@
+label.signUpUser {
+    position: absolute;
+    top: 2rem;
+    font-size: 35px;
+    text-align: center;
+    justify-content: center;
+    right: 13vmin;
+}
