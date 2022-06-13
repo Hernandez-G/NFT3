@@ -28,17 +28,15 @@ updateUserProfile();
       &nbsp; &nbsp; &nbsp;
       <div className="userProfile">
        <h3 className="userDetails">
-         {user.name}
-         <h3>fsfsgr</h3>
          {profile&&profile.username}
+        <p className="bioUser">
+          {profile&&profile.bio}
+        </p>
       </h3>
       <div className="linksProfile">
         <Link className="edit-profile" to="/editprofile"><FaRegEdit /></Link>
         <Link className="favorties-link-profile" to="/favorites"><AiOutlineHeart className="favorites-page-icon"/></Link>
       </div>
-        <p className="bioUser">
-          {profile&&profile.bio}
-        </p>
         </div>
         </div>
         <br />
