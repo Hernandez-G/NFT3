@@ -49,13 +49,6 @@
     border-radius: 50%;
 }
 
-/* .secondBorder{
-    margin-left: 6vmin;
-    width: 40vmin;
-    height: 40vmin;
-    border: 3px solid white;
-    border-radius: 50%;
-} */
 
 .linksProfile{
     margin:0
@@ -68,10 +61,6 @@
         display: flex;
         justify-content: center;
 }
-
-/* .photoCardUpload {
-
-} */
 
 
 button.UploadBTN {

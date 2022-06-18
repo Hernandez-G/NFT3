@@ -25,8 +25,7 @@ export default function NftPage({nfts}) {
                     <Card.Title className="nft-name">{n.name}</Card.Title>
                     <Card.Text>{n.chain}</Card.Text> 
                     <Card.Text>{n.contract_address}</Card.Text>
-                    <Link to={`/nftdetails/${n.token_id}`}> <CgDetailsMore /> </Link>
-                    <Link to="/creatorprofile">Creator</Link>
+                    <Link to={`/nftdetails/${n.token_id}`}><CgDetailsMore /></Link>
                     <button onClick={() => handleLikedNft(n.token_id, n.contract_address, n.chain)}><BiHeart /></button>
                 </Card.Body>
                 </Card>
