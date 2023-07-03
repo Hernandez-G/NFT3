@@ -28,7 +28,7 @@ function FavoritesPage() {
 
     async function removeLike(id) {
         const removeNftCards = await nftApi.removeFavorites(id);
-        const updateNftCards = nftCards.map(n => n.tokenId !== removeNftCards);
+        // const updateNftCards = nftCards.map(n => n.tokenId !== removeNftCards);
         setRefresh(!refresh)
     }
 
