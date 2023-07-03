@@ -2,7 +2,7 @@ import React from 'react';
 import "./NftDetailsPage.css";
 import { useParams } from "react-router-dom";
 import Modal from '../../components/Modal/Modal';
-import { Container } from 'react-bootstrap';
+// import { Container } from 'react-bootstrap';
 
 
 
